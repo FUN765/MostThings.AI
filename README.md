@@ -1,2 +1,2 @@
 # MostThings.AI
-An AI with a chat, conversation memory, image generator, image-to-video generator, and a website interface.
+I love cinematic effects and easy ways to create videos so I created this
