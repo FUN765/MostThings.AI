@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Video Studio</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>✦ AI VIDEO STUDIO</h1>
+    <p>Your personal AI video creator</p>
+</header>
+
+<nav>
+    <button onclick="showTab('video')">Video Creator</button>
+    <button onclick="showTab('image')">Image Generator</button>
+    <button onclick="showTab('chat')">AI Assistant</button>
+</nav>
+
+<main>
+
+<section id="video">
+    <h2>AI Video Generator</h2>
+
+    <textarea id="videoPrompt"
+        placeholder="Describe your video scene..."></textarea>
+
+    <select id="duration">
+        <option value="3">3 seconds</option>
+        <option value="5" selected>5 seconds</option>
+        <option value="8">8 seconds</option>
+        <option value="10">10 seconds</option>
+    </select>
+
+    <button onclick="makeVideo()">
+        Generate Video
+    </button>
+
+    <div id="videoResult"></div>
+</section>
+
+<section id="image" hidden>
+    <h2>AI Image Generator</h2>
+
+    <textarea id="imagePrompt"
+        placeholder="Describe your image..."></textarea>
+
+    <button onclick="makeImage()">
+        Generate Image
+    </button>
+
+    <div id="imageResult"></div>
+</section>
+
+<section id="chat" hidden>
+    <h2>AI Assistant</h2>
+
+    <div id="messages"></div>
+
+    <input id="question"
+        placeholder="Ask your AI something...">
+
+    <button onclick="askAI()">Send</button>
+
+    <button onclick="clearMemory()">Clear Memory</button>
+</section>
+
+</main>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
