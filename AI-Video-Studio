@@ -1,0 +1,12 @@
+AI-Video-Studio/
+│
+├── app.py
+├── requirements.txt
+├── .env
+│
+├── templates/
+│   └── index.html
+│
+└── static/
+    ├── style.css
+    └── app.js
